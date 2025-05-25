@@ -1,0 +1,45 @@
+.footerContainer {
+    height: 100px;
+    display: flex;
+    padding: 0 20px;
+    border-top: 2px solid #333333;
+
+    .leftTitle {
+        flex: 1;
+        display: grid;
+        font-size: 14px;
+        align-content: center; // 垂直居中整個內容區塊
+
+        span {
+            font-weight: 600;
+        }
+    }
+
+    .rightTitle {
+        flex: 2;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 30px;
+        padding-right: 3%;
+
+        .phone,
+        .email {
+            display: grid;
+            font-size: 14px;
+            font-weight: 400;
+            justify-items: flex-start;
+
+            div:first-child {
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i {
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+}
