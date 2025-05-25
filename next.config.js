@@ -1,24 +1,19 @@
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  output: "export",
   trailingSlash: true,
   images: {
-    unoptimized: true
+    unoptimized: true,
   },
   eslint: {
     ignoreDuringBuilds: true,
   },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
   sassOptions: {
-    includePaths: ["src/styles"],
-    prependData: `@use "variables" as *;`,
+    includePaths: ["./src/styles"],
+    additionalData: `@use "variables" as *;`,
   },
-  //github action page要部屬要把註解弄回來
-  basePath: '/my-cv',
-  assetPrefix: '/my-cv'
+  basePath: "/my-cv",
+  assetPrefix: "/my-cv",
 };
-
 
 module.exports = nextConfig;
