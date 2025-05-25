@@ -12,8 +12,8 @@ const nextConfig = {
     includePaths: ["./src/styles"],
     additionalData: `@use "variables" as *;`,
   },
-  basePath: "/my-cv",
-  assetPrefix: "/my-cv",
+  basePath: "/my_cv",
+  assetPrefix: "/my_cv",
 };
 
 module.exports = nextConfig;
