@@ -1,0 +1,97 @@
+    .aboutMeContainer {
+        display: flex;
+        height: 80vh;
+
+        .aboutMeMain {
+            display: flex;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 75%;
+            height: 800px;
+            transform: translate(-50%, -41%);
+            z-index: 10;
+
+            .leftBackGroundColor {
+                background-color: rgb(243, 233, 219);
+                flex: 1;
+                display: grid;
+                justify-content: center;
+                align-items: flex-start;
+                box-shadow: 0px 0px 10px #333333;
+
+                .PersonalMain {
+                    padding: 40px 0;
+
+                    .photo {
+                        width: 400px;
+                        height: 400px;
+                        border-radius: 50%;
+                        overflow: hidden;
+
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .titleName {
+                        padding: 20px 30px 20px 30px;
+                        display: grid;
+                        font-size: 36px;
+                        justify-content: center;
+
+                        span {
+                            line-height: 1.1;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .position {
+                        font-size: 36px;
+                        font-weight: 500;
+                        color: #999999;
+                        text-transform: uppercase;
+                        letter-spacing: 1.2px;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        position: relative;
+                        justify-items: center;
+
+                        p {
+                            line-height: 0.5;
+                            font-weight: 600;
+                        }
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: -30px;
+                            bottom: 20px;
+                            left: 37%;
+                            width: 100px;
+                            height: 2px;
+                            background-color: $color-light-blue;
+                        }
+                    }
+                }
+            }
+
+            .rightBackGroundColor {
+                flex: 1.5;
+                border: 2px solid #333333;
+
+                .selfIntroduction {}
+            }
+
+
+        }
+
+        .leftBackGroundColor {
+            background-color: bisque;
+            flex: 1;
+        }
+
+        .rightBackGroundColor {
+            flex: 1.5;
+        }
+    }

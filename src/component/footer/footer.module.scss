@@ -2,13 +2,12 @@
     height: 100px;
     display: flex;
     padding: 0 20px;
-    border-top: 2px solid #333333;
 
     .leftTitle {
         flex: 1;
         display: grid;
-        font-size: 14px;
-        align-content: center; // 垂直居中整個內容區塊
+        font-size: 24px;
+        align-content: center;
 
         span {
             font-weight: 600;
@@ -20,13 +19,13 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        gap: 30px;
-        padding-right: 3%;
+        gap: 80px;
+        padding-right: 5%;
 
         .phone,
         .email {
             display: grid;
-            font-size: 14px;
+            font-size: 24px;
             font-weight: 400;
             justify-items: flex-start;
 

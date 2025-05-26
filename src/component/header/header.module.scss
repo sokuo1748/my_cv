@@ -1,13 +1,13 @@
 .headerContainer {
-    height: 100px;
+    height: 200px;
     display: flex;
     padding: 0 20px;
-    border-bottom: 2px solid #333333;
 
     .leftTitle {
         flex: 1;
         display: flex;
         align-items: center;
+        padding-left: 3%;
 
         .icon {
 
@@ -21,9 +21,9 @@
         }
 
         .titleName {
-            padding: 0 20px 3px 10px;
+            padding: 0 20px 3px 30px;
             display: grid;
-            font-size: 24px;
+            font-size: 36px;
 
             span {
                 line-height: 1.1;
@@ -32,7 +32,7 @@
         }
 
         .position {
-            font-size: 20px;
+            font-size: 36px;
             font-weight: 500;
             color: #999999;
             text-transform: uppercase;
@@ -49,28 +49,31 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-    }
 
-    .navbarContainer {
-        display: flex;
-        padding-right: 40px;
-        gap: 20px;
+        .navbarContainer {
+            font-size: 24px;
+            display: flex;
+            padding-right: 80px;
+            gap: 60px;
 
-        cursor: pointer;
+            cursor: pointer;
 
-        .active {
-            color: $color-active-text;
-            position: relative;
+            .active {
+                color: $color-active-text;
+                position: relative;
 
-            &::after {
-                content: '';
-                position: absolute;
-                bottom: -38px; // 底線偏移量
-                left: 0%; // 起點偏右
-                width: 100%;
-                height: 4px;
-                background-color: $color-active-text;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -38px;
+                    left: 0%;
+                    width: 100%;
+                    height: 4px;
+                    background-color: $color-active-text;
+                }
             }
         }
     }
+
+
 }
