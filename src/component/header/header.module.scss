@@ -1,5 +1,5 @@
 .headerContainer {
-    height: 200px;
+    height: 130px;
     display: flex;
     padding: 0 20px;
 
@@ -7,7 +7,7 @@
         flex: 1;
         display: flex;
         align-items: center;
-        padding-left: 3%;
+        padding-left: 2.5%;
 
         .icon {
 
@@ -23,7 +23,7 @@
         .titleName {
             padding: 0 20px 3px 30px;
             display: grid;
-            font-size: 36px;
+            font-size: 24px;
 
             span {
                 line-height: 1.1;
@@ -32,7 +32,7 @@
         }
 
         .position {
-            font-size: 36px;
+             font-size: 24px;
             font-weight: 500;
             color: #999999;
             text-transform: uppercase;
@@ -51,10 +51,10 @@
         justify-content: flex-end;
 
         .navbarContainer {
-            font-size: 24px;
+            font-size: 14px;
             display: flex;
             padding-right: 80px;
-            gap: 60px;
+            gap: 40px;
 
             cursor: pointer;
 
