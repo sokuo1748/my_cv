@@ -6,12 +6,8 @@
     .leftTitle {
         flex: 1;
         display: grid;
-        font-size: 24px;
+        font-size: 14px;
         align-content: center;
-
-        span {
-            font-weight: 600;
-        }
     }
 
     .rightTitle {
@@ -25,8 +21,7 @@
         .phone,
         .email {
             display: grid;
-            font-size: 24px;
-            font-weight: 400;
+            font-size: 14px;
             justify-items: flex-start;
 
             div:first-child {
